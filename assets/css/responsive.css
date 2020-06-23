@@ -1,0 +1,158 @@
+@media screen and (max-width: 1500px){
+    /* Banner Section */
+    #banner-section{
+        height: 700px;
+    }
+    .banner-text-box{
+        width: 946px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+}
+
+
+@media screen and (max-width: 1200px) and (min-width: 1025px){
+    #header-section{
+        height: 61px;
+    }
+    .logo{
+        max-width: 200px;
+    }
+}
+
+
+@media screen and (max-width: 1024px){
+    /* header Section */
+    #header-section{
+        height: 55px;
+    }
+    .logo{
+        max-width: 180px;
+    }
+    /* mobile menu */
+    .mobile-menu{
+        display: block;
+        position: absolute;
+        left: 5px;
+        cursor: pointer;
+    }
+    .close-btn{
+        top: 15px;
+        display: block;
+        position: absolute;
+        right: 20px;
+        cursor: pointer;
+    }
+    .main-menu{
+        display: block;
+        background: rgba(13, 36, 129, 0.9);
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 0%;
+        height: 100vh;
+        z-index: 10;
+        visibility: hidden;
+    }
+    .main-menu ul{
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    .main-menu ul li{
+        display: block;
+        padding: 15px 0;
+    }
+    /* Banner Section */
+    #banner-section{
+        height: 650px;
+    }
+    .banner-text-box{
+        width: 90%;
+    } 
+    .inner-banner-text-box h1{
+        font-size: 4.8vw;
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    /* header section */
+    #header-section{
+        height: 50px;
+    }
+    .logo{
+        max-width: 160px;
+    }
+    .nav-right,
+    .nav-right-item{
+        padding-right: 20px;
+    }
+
+    /* Banner Section */
+    #banner-section{
+        height: 100vh;
+    }
+}
+@media screen and (max-width: 480px){
+    #header-section{
+        height: 37px;
+    }
+    .logo{
+        max-width: 120px;
+    }
+    .nav-right,
+    .nav-right-item{
+        padding-right: 10px;
+    }
+    .contact-btn button{
+        padding: 2px 5px;
+    }
+    .close-btn{
+        top: 10px;
+        font-size: 20px;
+    }
+    .search-box{
+        right: 15px;
+    }
+    .search-box input{
+        padding: 3px;
+    }
+
+    /* Banner Section */
+    #banner-section{
+        height: 70vh;
+    }
+    .nav{
+        height: 1px;
+        width: 10px;
+    }
+    .fourth-nav{
+        width: 20px;
+    }
+
+    /* primary button */
+    .primary-btn{
+        padding: 5px 10px;
+    }
+    .primary-btn span{
+        padding-left: 10px;
+    }
+}
+
+
+@media screen and (max-width: 380px){
+    #header-section{
+        height: 35px;
+    }
+    .logo{
+        max-width: 110px;
+    }
+    .nav-right,
+    .nav-right-item{
+        padding-right: 8px;
+    }
+}
