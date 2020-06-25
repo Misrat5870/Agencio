@@ -1,13 +1,89 @@
 @media screen and (max-width: 1500px){
+    h2{
+        font-size: 30px;
+    }
+    h3{
+        font-size: 22px;
+    }
+    
     /* Banner Section */
     #banner-section{
-        height: 700px;
+        height: 100vh;
     }
     .banner-text-box{
         width: 946px;
         left: 50%;
         top: 50%;
         transform: translate(-50%,-50%);
+    }
+
+    /* Service Section */
+    .inner-service-section{
+        padding: 0 5%;
+    }
+    .service-text{
+        padding: 3%;
+    }
+    .service:last-child{
+        margin-left: 0px;
+    }
+
+    /* Recent Work */
+    .inner-recent-work{
+        padding-left: 5%;
+    }
+    .recent-work-text p{
+        margin: 20px 0 50px;
+    }
+    /* Product Making  */
+    .inner-product-making{
+        padding: 0 5%;
+    }
+    .video-description{
+        padding: 30px  30px 100px;
+    }
+    .product-area .product-details{
+        margin: 20px 0 50px;
+    }
+    .product-area{
+        width: 55%;
+        padding: 0 30px;
+    }
+    #product-making-section {
+        padding: 0 0 60px;
+    }
+
+    /* Article Section */
+    .inner-article{
+        padding: 0 5%;
+    }
+    .related-article-box h3{
+        padding-right: 0%;
+        padding-bottom: 20px;
+    }
+    .artice-link{
+        margin-top: 15px;
+    }
+    .article{
+        margin-bottom: 30px; 
+    }
+
+    /* Contact Section */
+    .inner-contact{
+        padding: 5%;
+    }
+
+    /* Footer Top */
+    .inner-footer-top{
+        padding: 0 5% 5%;
+    }
+    .footer-logo img{
+        height: 60px;
+    }
+
+    /* Footer Bottom */
+    .inner-footer-bottom{
+        padding: 0px 5%;
     }
 }
 
@@ -23,6 +99,12 @@
 
 
 @media screen and (max-width: 1024px){
+    h3{
+        font-size: 20px;
+    }
+    h4{
+        font-size: 18px;
+    }
     /* header Section */
     #header-section{
         height: 55px;
@@ -38,11 +120,12 @@
         cursor: pointer;
     }
     .close-btn{
-        top: 15px;
+        top: 20px;
         display: block;
         position: absolute;
-        right: 20px;
+        right: 25px;
         cursor: pointer;
+        font-size: 25px;
     }
     .main-menu{
         display: block;
@@ -66,20 +149,125 @@
         display: block;
         padding: 15px 0;
     }
-    /* Banner Section */
-    #banner-section{
-        height: 650px;
+    .main-menu ul li a{
+        font-size: 25px;
     }
+    /* Banner Section */
     .banner-text-box{
         width: 90%;
     } 
     .inner-banner-text-box h1{
-        font-size: 4.8vw;
+        font-size: 48px;
+    }
+    /* Logo Section */
+    .logo-item{
+        padding: 10px;
+    }
+
+    /* Service Section */
+    .service-img{
+        display: none;
+        width: 0%;
+    }
+    .service-text{
+        width: 100%;
+        padding: 5%;
+    }
+    /* Product Making */
+    .inner-product-making{
+        display: block;
+    }
+    .video-area,
+    .product-area{
+        width: 100%;
+    }
+    .product-area{
+        padding: 50px 0;
+    }
+    .product-area .product-details{
+        margin: 10px 0 30px;
+    }
+    .video-description{
+        padding: 20px;
+    }
+    .video-author span{
+        font-size: 12px;
+    }
+    #product-making-section {
+        padding: 0 0 40px;
+    }
+
+    /* Article Section */
+    .article-section-title{
+        width: 100%;
+    }
+    .article-section-title p {
+        margin: 10px 0 50px;
+    }
+    .latest-article img {
+        margin: 20px 0;
+    }
+    .all-article{
+        display: block;
+    }
+    .latest-article{
+        width: 100%;
+    }
+    .related-article{
+        width: 100%;
+        padding-left: 0px;
+    }
+    .latest-article .artice-link{
+        margin-top: 30px;
+    }
+    .related-article-box {
+        margin-top: 50px;
+    }
+    .all-article .title{
+        font-size: 12px;
+    }
+    .all-article .title::before{
+        top: 8px;
+    }
+
+    /* Contact Section */
+    .contact-left{
+        width: 60%;
+    }
+    .contact-right{
+        width: 40%;
+    }
+    .contact-right img{
+        width: 70px;
+        height: 70px;
+    }
+
+    /* Footer top section */
+    .footer-item ul li{
+        padding: 5px 0;
     }
 }
 
+@media screen and (max-width: 994px){
+    .inner-banner-text-box h1::before{
+        top: 18%;
+    }
+    
+}
 
 @media screen and (max-width: 768px){
+    body{
+        font-size: 14px;
+    }
+    h2{
+        font-size: 25px;
+    }
+    h3{
+        font-size: 18px;
+    }
+    h4{
+        font-size: 16px;
+    }
     /* header section */
     #header-section{
         height: 50px;
@@ -96,19 +284,142 @@
     #banner-section{
         height: 100vh;
     }
+    .inner-banner-text-box h1{
+        font-size: 38px;
+        line-height: 1.2em;
+    }
+    /* Logo Section */
+    .inner-logo-seciton{
+        padding: 20px 0;
+    }
+    .logo-box{
+        justify-content: space-around;
+    }
+    .logo-item{
+        width: 25%;
+        padding: 10px;
+    }
+
+    /* Service Section */
+    .inner-service-section{
+        padding: 0;
+    }
+    .inner-service-text{
+        display: block;
+    }
+    .service{
+        width: 100%;
+    }
+    .service:last-child{
+        padding: 0;
+    }
+    .li-details p{
+        font-size: 12px;
+    }
+
+    /* Recent Work */
+    #recent-work {
+        padding: 50px 0;
+    }
+    .inner-recent-work{
+        display: block;
+        padding: 0 5%;
+    }
+    .recent-work-text p{
+        margin: 10px 0 30px;
+        line-height: 1.5em;
+    }
+    .recent-work-text{
+        width: 100%;
+        padding: 10px 20px 20px 0;
+    }
+    .recent-work-gallery{
+        width: 100%;
+    }
+    .owl-dots{
+        transform: translateX(-50%);
+        left: 50%;
+        bottom: 0;
+    }
+
+    /* Article Section */
+    .related-article-description{
+        padding-left: 10px;
+    }
+
+    /* Contact Section */
+    .contact-box{
+        display: block;
+    }
+    .contact-left{
+        width: 100%;
+    }
+    .contact-right{
+        width: 100%;
+    }
+    .contact-right img{
+        width: 60px;
+        height: 60px;
+    }
+
+    /* Footer Section */
+    .footer-top-box{
+        display: block;
+    } 
+    /* footer-top-left */
+    .footer-top-left{
+        width: 100%
+    }
+    .footer-top-left .footer-para{
+        padding: 10px 0 30px;
+    }
+    .footer-top-right{
+        width: 100%;
+        margin-top: 40px;
+    }
+    .footer-logo img{
+        height: 40px;
+    }
+    /* Footer Bottom */
+    .footer-bottom{
+        display: block;
+        text-align: center;
+    }
+    #footer-bottom-section{
+       font-size: 12px;
+    }
+    .footer-bottom-right ul{
+        margin-top: 5px;
+    }
 }
 @media screen and (max-width: 480px){
+    body{
+        font-size: 12px;
+    }
+    h2{
+        font-size: 22px;
+    }
+    h3{
+        font-size: 16px;
+    }
+    h4{
+        font-size: 14px;
+    }
+    /* Header Section */
     #header-section{
         height: 37px;
     }
     .logo{
         max-width: 120px;
     }
+    .main-menu ul li a{
+        font-size: 20px;
+    }
     .nav-right,
     .nav-right-item{
         padding-right: 10px;
     }
-    .contact-btn button{
+    .contact-btn a{
         padding: 2px 5px;
     }
     .close-btn{
@@ -117,14 +428,15 @@
     }
     .search-box{
         right: 15px;
+        bottom: -20px;
     }
     .search-box input{
         padding: 3px;
     }
 
     /* Banner Section */
-    #banner-section{
-        height: 70vh;
+    .inner-banner-text-box h1{
+        font-size: 30px;
     }
     .nav{
         height: 1px;
@@ -141,18 +453,61 @@
     .primary-btn span{
         padding-left: 10px;
     }
+
+    /* Logo Section */
+    .logo-item{
+        width: 30%;
+        padding: 10px;
+    }
+
+    /* Article Section */
+    .article{
+        display: block;  
+    }
+    .all-article .title{
+        font-size: 10px;
+    }
+    .all-article .title::before{
+        top: 7px;
+    }
+
+    /* Contact Section */
+    .contact-right img{
+        width: 40px;
+        height: 40px;
+    }
+
+    /* Footer Top Section */
+    .address{
+        display: block;
+    }
+    .address-box{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
 }
 
 
 @media screen and (max-width: 380px){
+    body{
+        font-size: 11px;
+    }
     #header-section{
         height: 35px;
     }
     .logo{
         max-width: 110px;
     }
+    .main-menu ul li a{
+        font-size: 18px;
+    }
     .nav-right,
     .nav-right-item{
         padding-right: 8px;
+    }
+    /* Banner Section */
+    .inner-banner-text-box h1{
+        font-size: 22px;
     }
 }
