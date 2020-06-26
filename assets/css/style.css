@@ -59,18 +59,18 @@ a{
 Re-usable CSS
 =============================*/
 .container{
-    max-width: 960px;
-    width: 96%;
+    max-width: 1735px;
+    width: 90%;
     margin: 0 auto;
+    overflow-x: hidden;
 }
 h1,h2,h3,h4,h4,h6{
     color: #1E2329;
-    line-height: 1.5em;
     font-family: 'Noto Serif', serif;
+    line-height: 1.5em;
 }
 h2{
     font-size: 40px;
-    padding: 10px 0;
 }
 h3{
    font-size: 30px;
@@ -84,13 +84,20 @@ h4{
     padding: 10px 20px;
     border-radius: 4px;
     display: inline-block;
+    border: 1px solid #0D2481;
+    transition: .3s;
+}
+.primary-btn:hover{
+    color: #0D2481;
+    background: #fff;
 }
 .primary-btn span{
     padding-left: 15px;
+    padding-top: 5px;
 }
 .mini-title{
     position: relative;
-    left: 32px;
+    left: 45px;
 }
 .title{
     font-weight: normal;
@@ -101,10 +108,10 @@ h4{
     content: " ";
     display: block;
     height: 1px;
-    width: 25px;
+    width: 35px;
     background: #4D5B6C;
     position: absolute;
-    left: -28px;
+    left: -45px;
     top: 10px;
 }
 
@@ -270,7 +277,8 @@ Banner Section CSS
 Logo Section CSS
 =============================*/
 .inner-logo-seciton{
-    padding: 40px 0;
+    padding: 50px;
+    width: 80%;
 }
 .logo-box{
     display: flex;
@@ -280,7 +288,7 @@ Logo Section CSS
 }
 .logo-item{
     width: 20%;
-    padding: 10px 20px;
+    padding: 20px;
 }
 .logo-item img{
     width: 100%;
@@ -291,6 +299,7 @@ Logo Section CSS
 /* ==========================
 Service Section CSS
 =============================*/
+/* Service-text */
 .service-box{
     display: flex;
 }
@@ -300,11 +309,6 @@ Service Section CSS
 .service-img img{
     width: 100%;
     height: 100%;
-}
-
-/* Service-text */
-.inner-service-section{
-    padding: 0 7%;
 }
 .service-text{
     padding: 5% 3% 5% 5%;
@@ -327,6 +331,7 @@ Service Section CSS
 }
 .inner-service-text{
     display: flex;
+    margin-bottom: 50px;
 }
 .service{
     width: 50%;
@@ -373,10 +378,6 @@ Service Section CSS
 .li-details p{
     font-size: 14px;
 }
-
-.challenge{
-    margin-top: 30px;
-}
 .challenge p{
     padding: 10px;
     background: #0C2175;
@@ -389,29 +390,33 @@ Service Section CSS
     padding-right: 15px;
 }
 
-
 /* ==========================
 Recent Work Section CSS
 =============================*/
 #recent-work{
-    padding: 90px 0;
+    padding: 100px 0 50px;
+}
+#recent-work .container{
+    margin: 0 0 0 auto;
+    overflow-x: visible;
 }
 .inner-recent-work{
-    padding-left: 7%;
     display: flex;
 }
 .recent-work-text{
     width: 35%;
-    padding: 20px 50px 50px 0;
+    padding: 20px 50px 0px 0;
+    position: relative;
+    left: -5%;
 }
 .recent-work-text p{
-    margin: 30px 0 90px;
-    line-height: 1.5em;
+    margin: 20px 0 80px;
 }
 /*Gallery CSs */
 .recent-work-gallery{
     width: 65%;
-    position: relative;
+    /* position: absolute;
+    right: 0; */
 }
 .gallery-item img{
     cursor: pointer;
@@ -447,11 +452,10 @@ Recent Work Section CSS
 Product Making Section CSS
 =============================*/
 #product-making-section{
-    padding: 0 0 90px;
+    padding: 50px 0;
 }
 .inner-product-making{
     display: flex;
-    padding: 0 7%;
 }
 /* Video area */
 .video-area{
@@ -489,8 +493,7 @@ Product Making Section CSS
     position: relative;
 }
 .video-description p{
-    line-height: 1.5em;
-    margin-bottom: 70px;
+    margin-bottom: 80px;
 }
 .video-author{
     display: flex;
@@ -508,7 +511,7 @@ Product Making Section CSS
     padding: 0 50px;
 }
 .product-area .product-details{
-    margin: 30px 0 80px;
+    margin: 20px 0 80px;
 }
 .product-box{
     display: flex;
@@ -523,20 +526,18 @@ Product Making Section CSS
     padding: 10px 0 !important;
 }
 
+
 /* ==========================
 Article Section CSS
 =============================*/
 #article-section{
-    padding: 0 0 90px;
-}
-.inner-article{
-    padding: 0 7%;
+    padding: 50px 0 100px;
 }
 .article-section-title{
     width: 50%;
 }
 .article-section-title p{
-    margin: 30px 0 90px;
+    margin: 20px 0 80px;
 }
 .all-article .title{
     font-size: 14px;
@@ -547,7 +548,6 @@ Article Section CSS
 .artice-link{
     display: block;
     color: #0D2481;
-    margin-top: 30px;
 }
 .artice-link span{
     padding-left: 10px;
@@ -560,9 +560,10 @@ Article Section CSS
     width: 100%;
     margin: 40px 0;
 }
-.latest-article .artice-link{
-    margin-top: 60px;
+.latest-article p{
+    margin-bottom: 80px;
 }
+
 /* Related Article */
 .related-article{
     width: 50%;
@@ -572,20 +573,28 @@ Article Section CSS
 .related-article-box h3{
     padding-right: 30%;
 }
-.article{
-    display: flex;  
-    margin-bottom: 60px; 
+.related-article-description p{
+    padding: 0 0 30px;
+}
+.article{ 
+    margin: 10px 0 70px; 
+    display: block;
+}
+.related-article-img{
+    width: 50%;
+    float: left;
+    margin-right: 10px;
+    margin-top: 10px;
 }
 .related-article-img img{
     width: 100%;
-}
-.related-article-description{
-    padding-left: 30px;
 }
 .related-article .primary-btn{
     float: right;
     margin-top: 20px;
 }
+
+
 
 /* ==========================
 Contact Section CSS
@@ -594,9 +603,10 @@ Contact Section CSS
     background: url("../img/contact-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
 }
 .inner-contact{
-    padding: 5% 7%;
+    padding: 50px 0;
     color: #98A5D9;
 }
 .contact-box{
@@ -618,7 +628,7 @@ Contact Section CSS
     color: #fff;
 }
 .contact-left p{
-    padding: 20px 0 50px;
+    padding: 20px 0;
 }
 /* contact-right */
 .contact-right{
@@ -637,6 +647,7 @@ Contact Section CSS
     background: #173198;
 }
 
+
 /* ==========================
 Footer Top Section CSS
 =============================*/
@@ -646,7 +657,7 @@ Footer Top Section CSS
     background-position: center;
 }
 .inner-footer-top{
-    padding: 0 7% 7%;
+    padding: 0 0 50px;
 }
 .footer-top-box{
     display: flex;
@@ -686,6 +697,7 @@ Footer Top Section CSS
     padding: 8px 0;
 }
 
+
 /* ==========================
 Footer Bottom Section CSS
 =============================*/
@@ -696,7 +708,7 @@ Footer Bottom Section CSS
     font-size: 14px;
 }
 .inner-footer-bottom{
-    padding: 0px 7%;
+    padding: 0 0 25px;
 }
 .footer-bottom{
     display: flex;

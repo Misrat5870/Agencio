@@ -1,14 +1,29 @@
-@media screen and (max-width: 1500px){
+@media screen and (min-width: 1921px){
+    #recent-work .container{
+        margin: 0 auto;
+        overflow-x: hidden;
+    }
+    .recent-work-text{
+        left: 0%;
+    }
+}
+
+@media screen and (max-width: 1366px){
     h2{
         font-size: 30px;
     }
     h3{
         font-size: 22px;
     }
+    .recent-work-text p,
+    .product-area .product-details,
+    .article-section-title p{
+        margin: 20px 0 40px;
+    }
     
     /* Banner Section */
     #banner-section{
-        height: 100vh;
+        height: 720px;
     }
     .banner-text-box{
         width: 946px;
@@ -18,9 +33,6 @@
     }
 
     /* Service Section */
-    .inner-service-section{
-        padding: 0 5%;
-    }
     .service-text{
         padding: 3%;
     }
@@ -28,65 +40,30 @@
         margin-left: 0px;
     }
 
-    /* Recent Work */
-    .inner-recent-work{
-        padding-left: 5%;
-    }
-    .recent-work-text p{
-        margin: 20px 0 50px;
-    }
     /* Product Making  */
-    .inner-product-making{
-        padding: 0 5%;
-    }
     .video-description{
         padding: 30px  30px 100px;
     }
-    .product-area .product-details{
-        margin: 20px 0 50px;
-    }
     .product-area{
         width: 55%;
-        padding: 0 30px;
-    }
-    #product-making-section {
-        padding: 0 0 60px;
     }
 
     /* Article Section */
-    .inner-article{
-        padding: 0 5%;
-    }
     .related-article-box h3{
         padding-right: 0%;
-        padding-bottom: 20px;
     }
-    .artice-link{
-        margin-top: 15px;
+    .latest-article img{
+        margin: 20px 0;
     }
     .article{
         margin-bottom: 30px; 
     }
 
-    /* Contact Section */
-    .inner-contact{
-        padding: 5%;
-    }
-
     /* Footer Top */
-    .inner-footer-top{
-        padding: 0 5% 5%;
-    }
     .footer-logo img{
         height: 60px;
     }
-
-    /* Footer Bottom */
-    .inner-footer-bottom{
-        padding: 0px 5%;
-    }
 }
-
 
 @media screen and (max-width: 1200px) and (min-width: 1025px){
     #header-section{
@@ -177,24 +154,19 @@
     .inner-product-making{
         display: block;
     }
-    .video-area,
-    .product-area{
+    .video-area{
         width: 100%;
     }
     .product-area{
-        padding: 50px 0;
-    }
-    .product-area .product-details{
-        margin: 10px 0 30px;
+        width: 100%;
+        padding: 0;
+        padding-top: 50px;
     }
     .video-description{
         padding: 20px;
     }
     .video-author span{
         font-size: 12px;
-    }
-    #product-making-section {
-        padding: 0 0 40px;
     }
 
     /* Article Section */
@@ -213,15 +185,26 @@
     .latest-article{
         width: 100%;
     }
+    .latest-article p {
+        margin-bottom: 50px;
+    }
     .related-article{
         width: 100%;
         padding-left: 0px;
-    }
-    .latest-article .artice-link{
-        margin-top: 30px;
-    }
-    .related-article-box {
         margin-top: 50px;
+    }
+    .article{ 
+        display: flex;
+    }
+    .related-article-img{
+        width: 30%;
+        float: none;
+    }
+    .related-article-description{
+        width: 70%;
+    }
+    .related-article-img{
+        margin-top: 0px;
     }
     .all-article .title{
         font-size: 12px;
@@ -282,7 +265,7 @@
 
     /* Banner Section */
     #banner-section{
-        height: 100vh;
+        height: 620px;
     }
     .inner-banner-text-box h1{
         font-size: 38px;
@@ -323,7 +306,13 @@
     }
     .inner-recent-work{
         display: block;
-        padding: 0 5%;
+    }
+    #recent-work .container{
+        margin: 0 auto;
+        overflow-x: hidden;
+    }
+    .recent-work-text{
+        left: 0%;
     }
     .recent-work-text p{
         margin: 10px 0 30px;
@@ -435,6 +424,10 @@
     }
 
     /* Banner Section */
+    /* Banner Section */
+    #banner-section{
+        height: 400px;
+    }
     .inner-banner-text-box h1{
         font-size: 30px;
     }
@@ -462,7 +455,16 @@
 
     /* Article Section */
     .article{
-        display: block;  
+        display: inherit;
+    }
+    .related-article-img{
+        width: 50%;
+        float: left;
+        margin-top: 5px;
+    }
+    .related-article-description{
+        padding-left: 0px;
+        width: auto;
     }
     .all-article .title{
         font-size: 10px;
@@ -490,7 +492,7 @@
 
 
 @media screen and (max-width: 380px){
-    body{
+    #header-section .nav-right-item{
         font-size: 11px;
     }
     #header-section{
